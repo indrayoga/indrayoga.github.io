@@ -7,6 +7,9 @@ Sebagai catatan pertama, saya ingin menulis tentang membuat ***github pages***.
 Dari halaman resminya [disini](https://help.github.com/articles/what-is-github-pages/)  menjelaskan bahwa github pages adalah *static site hosting service*  atau kalau diterjemahkan bebas yaitu layanan hosting situs statis.
 
 ## Bagaimana Membuat Github Pages?
-Membuat ***github pages*** mudah saja, yaitu :
-1. Kita harus memiliki akun github terlebih dahulu, kita bisa mendaftar di halaman [github.com](https://github.com)
-2. 
+####Sebelum membuat gitHub Pages, setidaknya kita harus memenuhi 2 syarat yaitu :
+1. Paham tentang *version control git* , tutorialnya bisa dilihat [disini] (http://sinaudev.org/berkas/MengenalGit.pdf).
+2. Paham tentang *markdown editor*, tutorialnya bisa dilihat di web [http://www.markdowntutorial.com/](http://www.markdowntutorial.com/)
+Jika sudah memahaminya maka membuat github pages akan sangat mudah, nah untuk membuatnya silahkan langsung ke halaman [github.io](https://pages.github.com/).
+
+sekian dari saya, terima kasih.
