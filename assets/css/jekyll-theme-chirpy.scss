@@ -10,5 +10,17 @@
 /* append your custom style below */
 
 #sidebar{
-background: #2a1e6b !important;
+  background: radial-gradient(59.78% 45.32% at 31.69% 94.07%,#582854,#37254c) !important;
+}
+
+#sidebar .site-title a:hover {
+  color: #fff;
+}
+
+#sidebar ul li.nav-item.active a.nav-link {
+  color: #fff;
+}
+
+#sidebar ul li.nav-item a.nav-link {
+  color: #fff;
 }
