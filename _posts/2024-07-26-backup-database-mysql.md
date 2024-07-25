@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Membackup database mysql di server ubuntu
+date: 2024-07-26
 categories: [Blog]
 tags: [server,database,mysql]
 ---
