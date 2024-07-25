@@ -22,7 +22,7 @@ jika ingin membuat penjadwalan membackup data secara periodik kita bisa menaruhn
 ```
 crontab -e
 ```
-![konfigurasi crontab untuk backup database](/images/cron-backup-db.png)
+
 
 konfigurasi diatas akan menjalankan perintah backup data setiap jam 1 malam.
 
