@@ -17,14 +17,13 @@ jika ingin sekaligus di compress bisa dengan perintah :
 ```
 mysqldump -u[USER] -p[PASSWORD] --all-databases | gzip -9 > backup-all-db.sql.gz
 ```
-
 jika ingin membuat penjadwalan membackup data secara periodik kita bisa menaruhnya di `cron` :
 ```
 crontab -e
 ```
+![konfigurasi crontab untuk backup database](/images/cron-backup-db.png)
 
-
-konfigurasi diatas akan menjalankan perintah backup data setiap jam 1 malam.
+konfigurasi diatas akan menjalankan perintah backup data setiap jam 9 malam.
 
 untuk cara yang lebih lanjutnya kita bisa membuat skema backup yang biasa disebut *Grandfather-father-son (GFS)* , singkatnya GFS mengharuskan kita membuat backup per bulan (*grandfather*), per minggu (*father*) dan per hari (*son*).
 
