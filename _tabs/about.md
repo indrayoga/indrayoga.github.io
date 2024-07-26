@@ -9,4 +9,4 @@ Seorang ***Software Developer***, seringnya membuat aplikasi berbasis web dengan
 
 ### Hubungi Saya
 
-[Email](indrayogapermana@gmail.com) | [X/ Twitter](x.com/indrayepe)
+[Email](mailto:indrayogapermana@gmail.com) | [X/ Twitter](https://x.com/indrayepe)
