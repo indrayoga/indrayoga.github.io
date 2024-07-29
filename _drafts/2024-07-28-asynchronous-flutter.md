@@ -85,3 +85,6 @@ Future<void> fetchDatapegawai(){
   return Future.delayed(Duration(seconds: 5),()=>print("tampilkan data user"));
 }
 ```
+
+# Async dan Await
+Penggunaan fungsi asynchronous biasanya disertai dengan 2 keyword yaitu ```async``` dan ```await```
