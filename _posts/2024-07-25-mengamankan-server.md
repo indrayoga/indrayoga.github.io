@@ -8,6 +8,8 @@ categories: [Blog]
 tags: [server,ubuntu,security]
 ---
 
+**Bismillahirrahmannirrahim.**
+
 Beberapa cara yang biasa saya lakukan untuk mengamankan server/web server ubuntu.
 
  - Mengaktifkan firewall

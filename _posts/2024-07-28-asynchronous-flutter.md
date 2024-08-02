@@ -8,6 +8,8 @@ categories: [Blog]
 tags: [flutter]
 ---
 
+**Bismillahirrahmannirrahim.**
+
 Semisal kita punya baris kode seperti berikut :
 ```
 void main() {
@@ -19,7 +21,7 @@ void main() {
   print("Selesai Berhitung");
 }
 ```
-maka flutter akan mengeksekusi baris kode dan menampilkan hasil tersebut mulai dari atas sampai bawah secara berurutan.
+maka *flutter* akan mengeksekusi baris kode dan menampilkan hasil tersebut mulai dari atas sampai bawah secara berurutan.
 
 ```
 Nama : Indra
@@ -37,8 +39,7 @@ hello 10
 Selesai Berhitung
 ```
 
-dan ini yang disebut synchronous, untuk membuat menjadi asynchronous kita bisa bungkus kode tersebut dengan fungsi Future(), dan fungsi Future() membutuhkan sebuah anonymous function,
-perhatikan kode berikut :
+dan ini yang disebut *synchronous*, untuk membuat menjadi *asynchronous* kita bisa bungkus kode tersebut dengan fungsi *Future()*, perhatikan kode berikut :
 
 ```
 void main() {
@@ -69,7 +70,9 @@ Selesai Berhitung
 Mulai Berhitung
 ```
 
-bisa kita lihat kode yang di bungkus oleh Future() tampil terakhir padahal di urutan baris kodenya seperti itu.
+bisa kita lihat kode yang di bungkus oleh *Future()* tampil terakhir padahal di urutan baris kodenya seperti itu, ini dikarenakan baris ` Future((){
+    print("Mulai Berhitung");
+  });` dijalankan di *thread* berbeda dengan *main thread*.
 
 # untuk apa asynchronous
 Pada contoh kode diatas mungkin tidak terlalu terlihat kegunaan dari asynchronous. Akan tetapi untuk melakukan pekerjaan yang berat, atau pekerjaan yang membutuhkan waktu yang belum dapat kita pastikan kapan pekerjaan itu selesai maka fungsi asynchronous ini akan sangat bermanfaat, salah satu contohnya adalah ketika melakukan permintaan data (request) misal melakukan http request pada API, contoh pada kode berikut :
@@ -87,4 +90,14 @@ Future<void> fetchDatapegawai(){
 ```
 
 # Async dan Await
-Penggunaan fungsi asynchronous biasanya disertai dengan 2 keyword yaitu ```async``` dan ```await```
+Penggunaan fungsi asynchronous biasanya disertai dengan 2 *keyword* yaitu ```async``` dan ```await```, ada 2 aturan dalam penggunaan *keyword* ini :
+1. `async` diletakkan setelah nama fungsi atau sebelum tanda kurung kurawal pembuka `{`.
+2. `await` hanya bisa dipakai di fungsi yang menggunakan *keyword* `async`.
+
+```
+Future getAllUser() async {
+    var response = await http.get(Uri.parse("https://reqres.in/api/users"));
+  }
+```
+
+untuk contoh lebih lengkap dan bisa dijalankan bisa check di [github](https://github.com/indrayoga/flutter_async_example) saya.

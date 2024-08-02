@@ -10,5 +10,7 @@ tags: [laravel]
 
 Ada berbagai macam metode autentikasi yang populer dan banyak digunakan tapi pada artikel ini kita akan membahasa metode autentikasi yang biasa digunakan di laravel :
 
+- session based auth
 - basic auth
+- token based auth
   

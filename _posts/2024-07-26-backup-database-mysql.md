@@ -9,6 +9,8 @@ categories: [Blog]
 tags: [server,database,mysql]
 ---
 
+**Bismillahirrahmannirrahim.**
+
 Ada beberapa cara untuk kita bisa membackup database mysql di server ubuntu, yang sederhana bisa dengan perintah di console/terminal: 
 ```
 mysqldump -u[USER] -p[PASSWORD] --all-databases
