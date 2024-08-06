@@ -4,7 +4,7 @@ description: tutorial membackup database mysql.
 author: indrayepe
 comments: true
 date: 2024-07-25 14:35:00 +0800
-pin: true
+pin: false
 categories: [Blog]
 tags: [server,database,mysql]
 ---

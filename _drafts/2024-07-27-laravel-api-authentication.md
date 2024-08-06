@@ -14,3 +14,4 @@ Ada berbagai macam metode autentikasi yang populer dan banyak digunakan tapi pad
 - basic auth
 - token based auth
   
+  # Session based 
