@@ -8,10 +8,7 @@ categories: [Blog]
 tags: [laravel]
 ---
 
-Ada berbagai macam metode autentikasi yang populer dan banyak digunakan tapi pada artikel ini kita akan membahasa metode autentikasi yang biasa digunakan di laravel :
+Laravel memiliki beberapa middleware otentikasi bawaan yang bisa digunakan, yaitu :
 
-- session based auth
-- basic auth
-- token based auth
-  
-  # Session based 
+### auth
+Middleware ini adalah mungkin yang paling sering digunakan, middleware ini digunakan ketika akan menggunakan otentikasi berbasis cookie/session
