@@ -66,15 +66,15 @@ curl_close($curl);
 echo $response;
 ```
 
-### [auth.sanctum](https://laravel.com/docs/11.x/sanctum#main-content)
-Yang terakhir adalah [auth.sanctum](https://laravel.com/docs/11.x/sanctum#main-content), middleware yang mengimplementasikan otentikasi berbasis token, berbeda dengan auth dan auth.basic kita tidak bisa langsung memakainya tapi kita harus menginstall package nya terlebih dahulu.
+### [auth:sanctum](https://laravel.com/docs/11.x/sanctum#main-content)
+Yang terakhir adalah [auth:sanctum](https://laravel.com/docs/11.x/sanctum#main-content), middleware yang mengimplementasikan otentikasi berbasis token, berbeda dengan auth dan auth.basic kita tidak bisa langsung memakainya tapi kita harus menginstall package nya terlebih dahulu.
 ```
 php artisan install:api
 ```
 
 kemudian kita bisa menggunakannya sebagaimana auth dan auth.basic :
 ```
-Route::middleware(['auth.sanctum'])->group(function () {
+Route::middleware(['auth:sanctum'])->group(function () {
    Route::get('home', function () {
        echo "<h1>Selamat Datang</h1>";
    });
@@ -101,7 +101,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'GET',
   CURLOPT_HTTPHEADER => array(
-    'Authorization: basic' . base64_encode([$username] . ':' . $password)
+    'Authorization: bearer [token]'
   ),
 ));
 
