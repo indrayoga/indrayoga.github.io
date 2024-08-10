@@ -3,7 +3,7 @@ title: Asynchronous di Flutter
 description: Penggunaan fungsi Asynchronous di flutter.
 author: Indra Yoga Permana
 date: 2024-07-28 22:55:00 +0800
-pin: true
+pin: false
 comments: true
 categories: [Blog]
 tags: [flutter]
