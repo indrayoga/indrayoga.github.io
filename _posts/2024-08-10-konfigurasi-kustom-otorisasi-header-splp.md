@@ -1,3 +1,8 @@
+
+
+
+
+
 ---
 title: Kustom konfigurasi header untuk otorisasi API di SPLP
 description: Konfigurasi header untuk otoriasi API berbasis token atau apikey bagi pengguna laravel sanctum atau aplikasi yang menggunakan otentikasi berbasis token
@@ -26,19 +31,25 @@ setelah melakukan pencarian dan bertanya saya dapat solusinya, yaitu dengan memb
 1. masuk ke API Configurations, kemudian pilih Runtime
 2. aktifkan Konfigurasi CORS
    ![aktifkan konfigurasi CORS SPLP](/images/konfigurasi-cors-splp.png)
+
 3. setelah itu pilih Mediasi Pesan
    ![mediasi pesan](/images/mediasi-kebijakan-splp.png)
+   
 4. pilih kebijakan kustom
    ![kebijakan kustom](/images/kebijakan-kustom-splp.png)
+   
 5. buat file xml dengan isi sebagai berikut :
+
    ```
    <?xml version="1.0" encoding="UTF-8"?>
    <sequence name="add_custom_header" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
    <header name="Authorization" value="Bearer [ISI TOKEN APLIKASI]" scope="transport"/>
    </sequence>
    ```
+
    save dengan nama add_custom_header.xml
-6. unggah file tersebut pada form kebijakan kustom sebagaimana pada langkah ke 4.
-7. setelah itu pilih save and deploy.
+
+7. unggah file tersebut pada form kebijakan kustom sebagaimana pada langkah ke 4.
+8. setelah itu pilih save and deploy.
 
 dan selesai, akhirnya saya bisa memasukkan endpoint aplikasi tersebut kedalam SPLP.
