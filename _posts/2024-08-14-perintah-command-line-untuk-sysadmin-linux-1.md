@@ -3,11 +3,13 @@ title: "Perintah Command Line Untuk SysAdmin Linux #1 - mengetahui ukuran file/d
 description: Berikut ini beberapa perintah command line di server linux yang saya pelajari dan biasa saya gunakan selama menjadi system administrator 
 author: Indra Yoga Permana
 date: 2024-08-14 22:23:00 +0800
-pin: true
+pin: **false**
 comments: true
 categories: [Blog]
 tags: [linux,ubuntu]
 ---
+
+**Bismillahirrahmannirrahim.**
 
 ### Mengetahui ukuran suatu direktori dengan perintah `du`
 Semakin lama server kita akan semakin banyak file file baru yang bertambah dan kapasitas penyimpanan harddisk akan berkurang, pastinya kita ingin tahu dimana atau apa yang banyak menggunakan kapasitas penyimpanan harddisk server kita, perintah `du` bisa digunakan untuk menghitung ukuran file atau direktori.
