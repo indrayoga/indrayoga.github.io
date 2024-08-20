@@ -3,7 +3,7 @@ title: Mengamankan Server Ubuntu
 description: cara cara yang dapat dilakukan untuk mengamankan server.
 author: Indra Yoga Permana
 date: 2024-07-25 14:35:00 +0800
-pin: false
+pin: true
 comments: true
 categories: [Blog]
 tags: [server,ubuntu,security]
@@ -13,25 +13,56 @@ tags: [server,ubuntu,security]
 
 Beberapa cara yang biasa saya lakukan untuk mengamankan server/web server ubuntu.
 
- - Mengaktifkan firewall
+### Mengaktifkan firewall
 
-    Untuk mengaktifkan firewall :
-    ```
-    sudo ufw enable
-    ```
+Untuk mengaktifkan firewall :
+```
+sudo ufw enable
+```
+ketika firewall aktif, maka semua port akan ditutup kecuali yang kita bolehkan dibuka, untuk membuka port perintahnya :
+```
+sudo ufw allow 80
+sudo ufw allow 443
+```
+port `80` dan `443` adalah port untuk `http` dan `https` sehingga aplikasi web kita bisa diakses dari publik.
 
-    ketika firewall aktif, maka semua port akan ditutup kecuali yang kita bolehkan dibuka, untuk membuka port perintahnya :
-    ```
-    sudo ufw allow 80
-    sudo ufw allow 443
-    ```
-    port `80` dan `443` adalah port untuk `http` dan `https` sehingga aplikasi web kita bisa diakses dari publik.
-
- - memasang fail2ban
+### Memasang fail2ban
   
-    fail2ban adalah aplikasi yang memonitor log sistem kita di server, fail2ban membaca log seperti log ssh, log apache dan lainya dan melakukan analisa dan dapat melakukan `banned` dalam waktu tertentu, untuk instalasi dan konfigurasi bisa di baca [disini](https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/)
+fail2ban adalah aplikasi yang memonitor log sistem kita di server, fail2ban membaca log seperti log ssh, log apache dan lainya dan melakukan analisa dan dapat melakukan `banned` dalam waktu tertentu, untuk instalasi dan konfigurasi bisa di baca [disini](https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/)
 
- - memasang [ModSecurity](https://www.linode.com/docs/guides/securing-apache2-with-modsecurity/) (Web Application Firewall).
- -  Jika memakai apache, kita bisa memakai [mod_evasive](https://www.howtogeek.com/devops/how-to-configure-mod_evasive-for-apache-ddos-protection/) untuk mencegah DDOS.
+### Memasang [ModSecurity](https://www.linode.com/docs/guides/securing-apache2-with-modsecurity/) (Web Application Firewall).
 
+### Memasang Proteksi DDOS
+Jika memakai apache, kita bisa memakai [mod_evasive](https://www.howtogeek.com/devops/how-to-configure-mod_evasive-for-apache-ddos-protection/) untuk mencegah DDOS.
 
+### Mengamankan direktori upload file
+biasanya website atau aplikasi berbasis web menyediakan fitur upload, fitur upload ini bisa menjadi celah keamanan untuk penyerang bila tidak di implementasi dengan baik, selain implementasi keamanan di sisi aplikasi yang menyediakan fitur upload file, kita juga bisa menambahkan konfigurasi keamanan tambahan dari sisi server, misal jika kita menggunakan apache, kita bisa membuat whitelist apa saja file yang boleh di akses di direktori upload tersebut, misal kita punya direktori dengan path berikut :
+```
+/var/www/site.contoh.com/uploads
+```
+kita bisa membuat file `.htaccess` id directory `uploads` dengan isi seperti berikut :
+```
+order allow,deny
+
+<Files ~ "\.(pdf)$">
+   allow from all
+</Files>
+```
+maksud file `.htaccess` diatas adalah agar client tidak bisa membuka file dengan extensi apapun (misal:php,jsp,js,css dll) kecuali yang hanya berekstensi `.pdf` , jika file `uploads` tersebut isinya untuk gambar,kita sesuaikan seperti berikut :
+```
+order allow,deny
+
+<Files ~ "\.(jpg|png|jpeg)$">
+   allow from all
+</Files>
+```
+jika kita takut penyerang melakukan replace file .htaccess kita bisa lakukan konfigurasi di file apache.conf, tambahkan konfigurasi seperti berikut :
+```
+<Directory /var/www/site.contoh.com/uploads/>
+  order allow,deny
+
+  <Files ~ "\.(jpg|png|jpeg)$">
+    allow from all
+  </Files>
+</Direcoty>
+```
