@@ -3,7 +3,7 @@ title: "Perintah Command Line Untuk SysAdmin Linux #1 - mengetahui ukuran file/d
 description: Berikut ini beberapa perintah command line di server linux yang saya pelajari dan biasa saya gunakan selama menjadi system administrator 
 author: Indra Yoga Permana
 date: 2024-08-14 22:23:00 +0800
-pin: **false**
+pin: false
 comments: true
 categories: [Blog]
 tags: [linux,ubuntu]

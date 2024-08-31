@@ -3,7 +3,7 @@ title: "Perintah Command Line Untuk SysAdmin Linux #2 - monitoring log dengan `t
 description: Berikut ini beberapa perintah command line di server linux yang saya pelajari dan biasa saya gunakan selama menjadi system administrator 
 author: Indra Yoga Permana
 date: 2024-08-20 21:00:00 +0800
-pin: true
+pin: false
 comments: true
 categories: [Blog]
 tags: [linux,ubuntu]

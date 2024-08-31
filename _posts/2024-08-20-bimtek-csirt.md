@@ -1,5 +1,5 @@
 ---
-title: 'Bimtek Keamanan Siber #1'
+title: 'Bimtek Keamanan Siber'
 description: bimbingan teknis (bimtek) Kesiapsiagaan Prosedur Insiden Keamanan Siber dan Pembentukan Computer Security Insiden Response Team (CSIRT) atau Tim Tanggal Insiden Siber (TTIS) Provinsi Kalimantan Timur
 author: Indra Yoga Permana
 date: 2024-08-20 22:00:00 +0800
