@@ -35,6 +35,27 @@ fail2ban adalah aplikasi yang memonitor log sistem kita di server, fail2ban memb
 ### Memasang Proteksi DDOS
 Jika memakai apache, kita bisa memakai [mod_evasive](https://www.howtogeek.com/devops/how-to-configure-mod_evasive-for-apache-ddos-protection/) untuk mencegah DDOS.
 
+### Konfigurasi Hak Akses Direktori dan File Aplikasi Web
+Konfigurasi hak akses sangat penting, karena hak akses akan menentukan siapa atau apa yang bisa melihat, mengubah, menghapus atau mengeksekusi file tersebut.
+Jangan jadikan www-data atau apache atau user web server lainnya menjadi owner, melainkan jadikan group direktori atau file tersebut ke www-data/apache.
+```
+sudo chown -R developer:www-data /var/www/project 
+```
+untuk direktori didalam aplikasi web sebaiknya level permission-nya adalah 755.
+cara mengubah permission di dalam direktori aplikasi web kita :
+```
+sudo find /var/www/project -type d -exec chmod 755 {} \;
+```
+
+untuk file didalam aplikasi web sebaiknya level permission-nya adalah 644.
+```
+sudo find /var/www/project -type f -exec chmod 644 {} \;
+```
+Jika ada suatu kondisi user web server harus memiliki write akses ke suatu direktori maka kita set permission 775 pada direktori tersebut, seperti contoh pada direktori storage dan bootstrap/cache di laravel
+```
+sudo chmod -R 775 /var/www/project/storage
+sudo chmod -R 775 /var/www/project/bootstrap/cache
+```
 ### Mengamankan direktori upload file
 biasanya website atau aplikasi berbasis web menyediakan fitur upload, fitur upload ini bisa menjadi celah keamanan untuk penyerang bila tidak di implementasi dengan baik, selain implementasi keamanan di sisi aplikasi yang menyediakan fitur upload file, kita juga bisa menambahkan konfigurasi keamanan tambahan dari sisi server, misal jika kita menggunakan apache, kita bisa membuat whitelist apa saja file yang boleh di akses di direktori upload tersebut, misal kita punya direktori dengan path berikut :
 ```
