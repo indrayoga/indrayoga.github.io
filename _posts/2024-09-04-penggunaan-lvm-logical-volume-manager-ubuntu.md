@@ -110,7 +110,7 @@ kemudian kita bisa check kembali informasi *volume group* `ubuntu-vg`
 ```
 sudo vgdisplay
 ```
-![output-perintah-vgdisplay](2024-09-04-penggunaan-lvm-logical-volume-manager-ubuntu-vgdisplay.png)
+![output-perintah-vgdisplay](/images/2024-09-04-penggunaan-lvm-logical-volume-manager-ubuntu-vgdisplay.png)
 
 dari informasi diatas volume group ubuntu-vg telah berhasil bertambah kapasitasnya, kemudian kita bisa membuat atau menambahkan ke logical volume yang sudah ada sebelumnya seperti langkah sebelumnya.
 
