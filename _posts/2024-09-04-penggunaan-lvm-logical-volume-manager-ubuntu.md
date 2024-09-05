@@ -72,3 +72,45 @@ kemudian edit file `/etc/fstab` dan tambahkan baris ini
 ```
 UUID=isi UUID disini /var ext4 defaults 0 2
 ```
+### Menambahkan Hard Disk Baru
+Jika kita memiliki harddisk baru dan ingin menambahkan ke *server* dan menggabungkan ke *volume group* yang sudah ada.
+pertama, kita check dulu apakah *harddisk* itu terdeteksi oleh *server* kita
+```
+sudo fdisk -l
+```
+![contoh-output-fdisk](/images/2024-09-04-penggunaan-lvm-logical-volume-manager-ubuntu-fdisk.png)
+
+atau pilihan perintah lain adalah 
+```
+sudo lvmdiskscan
+```
+![contoh-output-lvmdiskscan](/images/2024-09-04-penggunaan-lvm-logical-volume-manager-ubuntu-lvmdiskscan.png)
+
+dari output diatas kita ketahui harddisk baru ada di `/dev/sdb`
+
+Membuat `Physical Volumes (pv)` pada harddisk `/dev/sdb`
+```
+sudo pvcreate /dev/sdb
+```
+kemudian kita check lagi dengan perintah :
+```
+sudo lvmdiskscan -l
+```
+![output-lvmdiskcan](/images/2024-09-04-penggunaan-lvm-logical-volume-manager-ubuntu-lvmdiskscan-2.png)
+
+dari output diatas, physical volumes baru telah dibuat.
+
+menggabungkan *physical volume /dev/sdb* ke *volume group* yang sudah ada.
+sebelumnya kita ketahui nama *volume group* adalah `ubuntu-vg`
+```
+sudo vgextend ubuntu-vg /dev/sdb
+```
+
+kemudian kita bisa check kembali informasi *volume group* `ubuntu-vg`
+```
+sudo vgdisplay
+```
+![output-perintah-vgdisplay](2024-09-04-penggunaan-lvm-logical-volume-manager-ubuntu-vgdisplay.png)
+
+dari informasi diatas volume group ubuntu-vg telah berhasil bertambah kapasitasnya, kemudian kita bisa membuat atau menambahkan ke logical volume yang sudah ada sebelumnya seperti langkah sebelumnya.
+
