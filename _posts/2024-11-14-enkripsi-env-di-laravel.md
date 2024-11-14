@@ -1,3 +1,16 @@
+---
+title: Enkripsi Berkas .env di Laravel
+description: Mengenkripsi berkas .env agar bisa di simpan di source control dengan aman
+author: Indra Yoga Permana
+date: 2024-11-14 10:23:00 +0800
+pin: false
+comments: true
+categories: [Blog]
+tags: [laravel,PHP]
+---
+
+**Bismillahirrahmannirrahim.**
+
 # Fungsi berkas .env di Laravel
 
 Berkas `.env` di Laravel berfungsi untuk menyimpan konfigurasi aplikasi yang bersifat sensitif dan dapat berbeda pada setiap lingkungan (*environment*). Misalnya, konfigurasi di lingkungan *development* biasanya berbeda dengan di lingkungan *production*. Umumnya, berkas `.env` tidak disertakan dalam *source control* karena mengandung informasi sensitif dan rahasia.
