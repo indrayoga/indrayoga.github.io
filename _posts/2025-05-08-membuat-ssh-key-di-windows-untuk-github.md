@@ -8,7 +8,7 @@ comments: true
 categories: [Blog]
 tags: [github,windows]
 image:
-  path: /images/ssh-keys-github.png
+  path: https://indrayoga.github.io/images/ssh-keys-github.png
   alt: memasang SSH Key di github
 ---
 
