@@ -7,6 +7,9 @@ pin: true
 comments: true
 categories: [Blog]
 tags: [github,windows]
+image:
+  path: /images/ssh-keys-github.png
+  alt: memasang SSH Key di github
 ---
 
 **Bismillahirrahmannirrahim.**
