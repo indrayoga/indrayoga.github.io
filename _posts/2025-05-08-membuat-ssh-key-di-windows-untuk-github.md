@@ -1,7 +1,6 @@
 ---
 title: Menggunakan SSH Key di Windows Untuk github
 description: Cara membuat SSH Key di windows dan memasangnya di github SSH Key
-author: Indra Yoga Permana
 date: 2025-05-08 10:00:00 +0800
 pin: true
 comments: true
