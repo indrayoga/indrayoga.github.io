@@ -5,7 +5,7 @@ date: 2025-05-08 10:00:00 +0800
 pin: true
 comments: true
 categories: [Blog]
-tags: [github,windows]
+tags: [flutter]
 image:
   path: https://indrayoga.github.io/images/Menyimpan-Objek-Kustom-di-Flutter.png
   alt: Menyimpan-Objek-Kustom-di-Flutter
