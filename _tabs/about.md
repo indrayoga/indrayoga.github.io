@@ -4,5 +4,17 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# 📌 Tentang Saya
+
+Assalamualaikum! 👋
+
+Seorang Software Developort yang ingin membagikan karya-karya open source dan konten bermanfaat lainnya.
+
+## 💖 Donasi dan Dukungan
+
+Dukung aku via [Saweria](https://saweria.co/indrayoga) 🙏
+
+[![Saweria](https://img.shields.io/badge/Saweria-Dukung%20Saya-orange?style=for-the-badge&logo=coffee)](https://saweria.co/indrayoga)
+
+Terima kasih! 🙌
+
