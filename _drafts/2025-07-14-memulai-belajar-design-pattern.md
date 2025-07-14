@@ -1,0 +1,1 @@
+hal yang mungkin ku sesali selama beberapa tahun menulis code dan membangun aplikasi adalah tidak dari awal belajar design pattern, dengan design pattern kita bisa menulis code kita lebih bersih dan mudah untuk di pelihara oleh karena itu saya ingin menulis di blog ini pengalaman ku belajar design pattern dan macam macam nya semoga bisa bermanfaat bagi anda yang membaca ini 
