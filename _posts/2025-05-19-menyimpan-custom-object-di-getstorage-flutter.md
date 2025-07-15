@@ -2,7 +2,7 @@
 title: "GetStorage Flutter: Cara Menyimpan dan Membaca Custom Objek"
 description: "Menyimpan custom object di getstorage flutter dan membuat helper yang bisa membantu mengurangi boilerplate."
 date: 2025-05-08 10:00:00 +0800
-pin: true
+pin: false
 comments: true
 categories: [Blog]
 tags: [flutter]
