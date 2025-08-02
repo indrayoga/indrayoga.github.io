@@ -1,7 +1,7 @@
 ---
 title: Mengamankan Server Ubuntu
 description: cara cara yang dapat dilakukan untuk mengamankan server.
-date: 2024-07-25 14:35:00 +0800
+date: 2025-08-02 14:35:00 +0800
 pin: true
 comments: true
 categories: [Blog]
