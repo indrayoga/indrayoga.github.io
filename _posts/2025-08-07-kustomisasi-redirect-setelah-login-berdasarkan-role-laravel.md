@@ -7,7 +7,7 @@ comments: true
 categories: [Blog]
 tags: [laravel,pemrograman]
 image:
-  path: https://indrayoga.github.io/images/2025-08-07-kustomisasi-redirect-setelah-login-berdasarkan-role.png
+  path: https://indrayoga.github.io/images/kustomisasi-redirect-setelah-login-berdasarkan-role.png
   alt: "kustomisasi redirect setelah login berdasarkan role"
 ---
 
