@@ -1,6 +1,6 @@
 ---
 title: Kustomisasi Redirect Setelah Login Berdasarkan Role di Laravel
-description: Ketika user **superadmin** telah login dan mengakses base URL (misal: `http://ekin.dev/`), muncul pesan **403 Forbidden**. Hal ini terjadi karena halaman redirect ke `/dashboard`, padahal seharusnya ke `/admin/dashboard`.
+description: "Ketika user superadmin telah login dan mengakses base URL (misal: http://ekin.dev/), muncul pesan 403 Forbidden. Hal ini terjadi karena halaman redirect ke /dashboard, padahal seharusnya ke /admin/dashboard."
 date: 2025-08-07 22:34:00 +0800
 pin: true
 comments: true
