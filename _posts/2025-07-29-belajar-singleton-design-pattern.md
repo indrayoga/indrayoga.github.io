@@ -2,7 +2,7 @@
 title: Belajar Design Pattern Singleton
 description: Singleton adalah pola desain yang memastikan bahwa sebuah kelas hanya memiliki satu _instance_ saja selama siklus hidup aplikasi, dan menyediakan cara global untuk mengakses _instance_ tersebut
 date: 2025-07-29 21:00:00 +0800
-pin: true
+pin: false
 comments: true
 categories: [Blog]
 tags: [design pattern,pemrograman]
