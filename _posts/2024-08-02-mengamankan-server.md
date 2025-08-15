@@ -6,7 +6,6 @@ tags: [server, ubuntu, security]
 comments: true
 mathjax: true
 author: Indra Yoga
-category: posts
 ---
 
 **Bismillahirrahmannirrahim.**

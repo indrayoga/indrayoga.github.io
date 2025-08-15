@@ -20,8 +20,8 @@ author: Indra Yoga
 ###############################################
 
 navbar-links:
-  Posts: "posts"
-  About Me: "aboutme"
+  Arsip: "arsip"
+  Tentang Saya: "aboutme"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
