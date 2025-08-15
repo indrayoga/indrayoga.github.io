@@ -6,7 +6,7 @@ order: 4
 
 # Tentang Saya
 
-Assalamualaikum! 👋
+Assalamualaikum!
 
 Seorang Programmer yang ingin belajar dan berbagi karya-karya open source dan konten bermanfaat lainnya.
 
