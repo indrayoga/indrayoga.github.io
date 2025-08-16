@@ -4,6 +4,11 @@ title: Memasang SSL di zimbra
 subtitle: langkah langkah untuk memasang SSL di server zimbra.
 comments: true
 tags: [server, zimbra, security]
+tags: [design pattern, pemrograman]
+cover-img: /assets/img/memasang-ssl-server-zimbra.png
+thumbnail-img: /assets/img/memasang-ssl-server-zimbra.png
+share-img: /assets/img/memasang-ssl-server-zimbra.png
+
 image:
   path: https://indrayoga.github.io/images/memasang-ssl-server-zimbra.png
   alt: "Memasang SSL di zimbra"

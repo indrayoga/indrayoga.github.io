@@ -4,9 +4,9 @@ title: Kustomisasi Redirect Setelah Login Berdasarkan Role di Laravel
 subtitle: Membuat dua atau lebih redirect login berdasarkan role yang ada
 comments: true
 tags: [laravel, pemrograman]
-image:
-  path: https://indrayoga.github.io/images/kustomisasi-redirect-setelah-login-berdasarkan-role.png
-  alt: "kustomisasi redirect setelah login berdasarkan role"
+cover-img: /assets/img/kustomisasi-redirect-setelah-login-berdasarkan-role.png
+thumbnail-img: /assets/img/kustomisasi-redirect-setelah-login-berdasarkan-role.png
+share-img: /assets/img/kustomisasi-redirect-setelah-login-berdasarkan-role.png
 ---
 
 **Bismillahirrahmannirrahim.**

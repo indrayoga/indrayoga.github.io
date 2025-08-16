@@ -20,6 +20,7 @@ author: Indra Yoga
 ###############################################
 
 navbar-links:
+  Beranda: "home"
   Arsip: "arsip"
   Tentang Saya: "aboutme"
   # Resources:
@@ -40,7 +41,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/assets/img/avatar.png"
+# title-img: "/assets/img/avatar.png"
 
 #####################################
 # --- Footer social media links --- #

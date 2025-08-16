@@ -5,9 +5,9 @@ subtitle: Meskipun mempelajari design pattern bukanlah hal yang wajib, tapi dapa
 date: 2025-07-15 22:00:00 +0800
 comments: true
 tags: [design pattern, pemrograman]
-image:
-  path: https://indrayoga.github.io/images/belajar-design-pattern.png
-  alt: "belajar design pattern"
+cover-img: /assets/img/belajar-design-pattern.png
+thumbnail-img: /assets/img/belajar-design-pattern.png
+share-img: /assets/img/belajar-design-pattern.png
 ---
 
 **Bismillahirrahmannirrahim.**

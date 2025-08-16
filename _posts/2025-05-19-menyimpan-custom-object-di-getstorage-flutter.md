@@ -4,9 +4,11 @@ title: "GetStorage Flutter: Cara Menyimpan dan Membaca Custom Objek"
 subtitle: "Menyimpan custom object di getstorage flutter dan membuat helper yang bisa membantu mengurangi boilerplate."
 comments: true
 tags: [flutter]
+
 image:
-  path: https://indrayoga.github.io/images/Menyimpan-Objek-Kustom-di-Flutter.png
-  alt: Menyimpan-Objek-Kustom-di-Flutter
+cover-img: /assets/img/Menyimpan-Objek-Kustom-di-Flutter.png.png
+thumbnail-img: /assets/img/Menyimpan-Objek-Kustom-di-Flutter.png.png
+share-img: /assets/img/Menyimpan-Objek-Kustom-di-Flutter.png.png
 ---
 
 **Bismillahirrahmannirrahim.**

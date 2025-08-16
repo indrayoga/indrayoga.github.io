@@ -4,9 +4,9 @@ title: Menggunakan SSH Key di Windows Untuk github
 subtitle: Cara membuat SSH Key di windows dan memasangnya di github SSH Key
 comments: true
 tags: [github, windows]
-image:
-  path: https://indrayoga.github.io/images/ssh-keys-github.png
-  alt: memasang SSH Key di github
+cover-img: /assets/img/ssh-keys-github.png
+thumbnail-img: /assets/img/ssh-keys-github.png
+share-img: /assets/img/ssh-keys-github.png
 ---
 
 **Bismillahirrahmannirrahim.**

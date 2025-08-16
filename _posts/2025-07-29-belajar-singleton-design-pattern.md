@@ -4,9 +4,9 @@ title: Belajar Design Pattern Singleton
 subtitle: Singleton adalah pola desain yang memastikan bahwa sebuah kelas hanya memiliki satu _instance_ saja selama siklus hidup aplikasi, dan menyediakan cara global untuk mengakses _instance_ tersebut
 comments: true
 tags: [design pattern, pemrograman]
-image:
-  path: https://indrayoga.github.io/images/design-pattern-singleton.png
-  alt: "belajar design pattern - singleton"
+cover-img: /assets/img/design-pattern-singleton.png
+thumbnail-img: /assets/img/design-pattern-singleton.png
+share-img: /assets/img/design-pattern-singleton.png
 ---
 
 **Bismillahirrahmannirrahim.**
